@@ -53,7 +53,7 @@ python2 tools/train_net.py \
 
 Testing
 -------
-Before testing, you should make sure that you have downloaded the pretrianed model. This example shows how to run a pretrained model using a single GPU for inference. 
+Before testing, you should make sure that you have downloaded the pretrianed model. (Pretrained model can be downloaded[model](https://pan.baidu.com/s/1Eu7EqUiw3H2ExkUOAXLeCg)) This example shows how to run a pretrained model using a single GPU for inference. 
 ```
 python2 tools/test_net.py \
     --cfg configs/coco_exp_configs/DensePose_ResNet50_FPN_cascade_mask_ref_dp_s1x-e2e.yaml \
