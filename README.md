@@ -53,7 +53,7 @@ python2 tools/train_net.py \
 
 Testing
 -------
-This example shows how to run an end-to-end trained PID-net model using a single GPU for inference. The model we used in experiments can be found in [Baidu](https://pan.baidu.com/s/1Eu7EqUiw3H2ExkUOAXLeCg)  
+This example shows how to run an end-to-end trained PID-net model using a single GPU for inference. The model we used in experiments can be found in [Baidu](https://pan.baidu.com/s/1Eu7EqUiw3H2ExkUOAXLeCg).
 ```
 python2 tools/test_net.py \
     --cfg configs/coco_exp_configs/DensePose_ResNet50_FPN_cascade_mask_ref_dp_s1x-e2e.yaml \
