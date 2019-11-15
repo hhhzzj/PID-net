@@ -35,22 +35,28 @@ presentations (i.e., Index-to-Patch, and specific U and V coordinates) of a huma
 following order: an input image and its corresponding 3D Index-to Patch (the patch ID of a pixel), U and V coordinates (the coordinates of
 a pixel in its corresponding patch).
 
-Training a model
+PID-net is implemented in the [Detectron](https://github.com/facebookresearch/Detectron) framework and [Densepose](https://github.com/facebookresearch/Densepose) project and is powered by [caffe2](https://github.com/facebookarchive/caffe2). In this repository, we provide the code to train and evaluate PID-net.
+
+Installation
+-------
+Please find installation instructions for Caffe2 and DensePose in [densepose](https://github.com/facebookresearch/DensePose/blob/master/INSTALL.md), a document based on the [Detectron](https://github.com/facebookresearch/Detectron) installation instructions.
+
+Training
 -------
 This example shows how to trian a model on the DensePose-COCO dataset. We can use different structure to train using different config. The model uses a ResNet-50-FPN backbone with an end-to-end trianing approach.
 
 ```
 python2 tools/train_net.py \
-    --cfg configs/coco_exp_configs/DensePose_ResNet50_FPN_cascade_mask_dp_s1x-e2e.yaml \
+    --cfg configs/coco_exp_configs/DensePose_ResNet50_FPN_cascade_mask_ref_dp_s1x-e2e.yaml \
     OUTPUT_DIR /tmp/detectron-output
 ```
 
-Testing a pretrianed model
+Testing
 -------
 Before testing, you should make sure that you have downloaded the pretrianed model. This example shows how to run a pretrained model using a single GPU for inference. 
 ```
 python2 tools/test_net.py \
-    --cfg configs/coco_exp_configs/DensePose_ResNet50_FPN_cascade_mask_dp_s1x-e2e.yaml \
+    --cfg configs/coco_exp_configs/DensePose_ResNet50_FPN_cascade_mask_ref_dp_s1x-e2e.yaml \
     TEST.WEIGHTS /the/dir/of/your/trained/model \
     NUM_GPUS 1
 ```
