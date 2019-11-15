@@ -29,7 +29,7 @@ DensePose-COCO) demonstrate the effectiveness of our
 proposed method. Our method surpasses the state-of-theart
 by a large margin.
 
-![fig](https://github.com/hhhzzj/PID-net/blob/master/result.png)
+![fig](https://github.com/hhhzzj/PID-net/blob/master/result-PID.png)
 
 Figure 1. Our PID-net prediction results. It aims to estimate dense correspondences from a 2D image in the wild to a 3D surface-based
 presentations (i.e., Index-to-Patch, and specific U and V coordinates) of a human body. Each example is arranged from left to right with the
