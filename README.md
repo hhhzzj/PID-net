@@ -1,6 +1,5 @@
 # PID-net: Progressive Instance Distillation Network for Dense Human Pose Estimation In-the-Wild
 -------
-Code coming soon.
 ![fig](https://github.com/hhhzzj/PID-net/blob/master/result_5.gif)
 ![fig](https://github.com/hhhzzj/PID-net/blob/master/result_7.gif)
 Dense human pose estimation aims at mapping all human
